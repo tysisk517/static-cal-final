@@ -1,0 +1,82 @@
+* {
+  font-family: "Aboreto", cursive;
+  margin: 0;
+  padding: 0;
+}
+
+.cal-container {
+  background-color: grey;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cal-container .flag-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.cal-container .flag-background video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background: #232a34;
+  opacity: 80%;
+}
+.cal-container .cal-wrapper {
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 3em;
+}
+.cal-container .cal-wrapper .title-wrapper {
+  color: white;
+  font-size: 5em;
+  padding: 10px;
+  text-align: center;
+  -webkit-text-stroke: 1px black;
+  -webkit-text-fill-color: white;
+}
+.cal-container .cal-wrapper .days-wrapper {
+  height: 800px;
+  width: 800px;
+  margin-top: 10px;
+  color: white;
+}
+.cal-container .cal-wrapper .days-wrapper .weekdays {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.cal-container .cal-wrapper .days-wrapper .weekdays .day-name {
+  text-align: center;
+  width: 100%;
+  background-color: rgb(90, 86, 86);
+  opacity: 70%;
+  font-size: 1.1em;
+}
+.cal-container .cal-wrapper .days-wrapper .week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.cal-container .cal-wrapper .days-wrapper .week .day {
+  border: 1px solid white;
+  height: 90px;
+  background-color: rgb(90, 86, 86);
+  opacity: 70%;
+  font-size: 30px;
+  padding: 5px;
+}/*# sourceMappingURL=styles.css.map */
